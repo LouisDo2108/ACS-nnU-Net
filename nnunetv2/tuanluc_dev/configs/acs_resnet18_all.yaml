@@ -1,0 +1,12 @@
+# A base YAML configuration file for the custom nnUNet pretrained
+# Variants: Replace all Conv3D with imagenet resnet18 ACSConv 
+# Author: LouisDo2108
+# Date: May 7, 2023
+
+includes:
+  - base.yaml
+
+acsconv: True
+acs_pretrained: resnet18
+nnUNet_init: True
+replace_all: True

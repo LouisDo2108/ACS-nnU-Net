@@ -1,0 +1,10 @@
+# A base YAML configuration file for the custom nnUNet pretrained
+# Variants: Replace nnUNet encoder with custom pretrained nnUNet encoder on classifiying HGG/LGG
+# Author: LouisDo2108
+# Date: May 7, 2023
+
+includes:
+  - hgg_lgg_acs_resnet18_encoder.yaml
+
+proxy_encoder_class: HGGLGGMultiHeadClassifier
+proxy_encoder_pretrained: "/home/dtpthao/workspace/nnUNet/nnunetv2/tuanluc_dev/results/cls_hgglgg_etncrnet/checkpoints/model_45.pt"

@@ -1,0 +1,13 @@
+# A base YAML configuration file for the custom nnUNet pretrained
+# Variants: Replace some Conv3D with imagenet resnet18 ACSConv 
+#           that was pretrained on distinguishing ImageNet and Brats images
+# Author: LouisDo2108
+# Date: May 7, 2023
+
+includes:
+  - base.yaml
+
+acsconv: True
+nnUNet_init: True
+acs_pretrained: "/home/dtpthao/workspace/nnUNet/nnunetv2/tuanluc_dev/results/resnet18_brats_imagenet_encoder/checkpoints/model_10.pt"
+replace_all: False
